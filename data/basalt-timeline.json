@@ -1,0 +1,251 @@
+{
+  "description": "Continuous 0–120 s coarse 3D cooling-fracture prototype; depth is a sampled phi>0.8 diagnostic, not physical crack aperture or natural column length.",
+  "rows": [
+    {
+      "time_s": 0.0,
+      "temperature_min_K": 1199.9999789484075,
+      "temperature_max_K": 1200.0000076467345,
+      "top_connected_damage_depth_mm": 0.0
+    },
+    {
+      "time_s": 1.0,
+      "temperature_min_K": 1136.3064188688431,
+      "temperature_max_K": 1199.9999949177222,
+      "top_connected_damage_depth_mm": 0.0
+    },
+    {
+      "time_s": 2.0,
+      "temperature_min_K": 1069.3489149471304,
+      "temperature_max_K": 1199.999020826592,
+      "top_connected_damage_depth_mm": 0.0
+    },
+    {
+      "time_s": 3.0,
+      "temperature_min_K": 1017.5702187898195,
+      "temperature_max_K": 1199.9931083323045,
+      "top_connected_damage_depth_mm": 0.0
+    },
+    {
+      "time_s": 4.0,
+      "temperature_min_K": 979.1372336118678,
+      "temperature_max_K": 1199.9671276174624,
+      "top_connected_damage_depth_mm": 0.0
+    },
+    {
+      "time_s": 5.0,
+      "temperature_min_K": 949.187729119011,
+      "temperature_max_K": 1199.8943206600193,
+      "top_connected_damage_depth_mm": 0.4800000000000004
+    },
+    {
+      "time_s": 6.0,
+      "temperature_min_K": 924.7409765740697,
+      "temperature_max_K": 1199.7511982026404,
+      "top_connected_damage_depth_mm": 0.7999999999999989
+    },
+    {
+      "time_s": 7.0,
+      "temperature_min_K": 904.1047633868864,
+      "temperature_max_K": 1199.5305535472303,
+      "top_connected_damage_depth_mm": 1.4400000000000004
+    },
+    {
+      "time_s": 8.0,
+      "temperature_min_K": 886.1951086422787,
+      "temperature_max_K": 1199.2399690035647,
+      "top_connected_damage_depth_mm": 1.759999999999999
+    },
+    {
+      "time_s": 9.0,
+      "temperature_min_K": 870.4892658537257,
+      "temperature_max_K": 1198.8918475209093,
+      "top_connected_damage_depth_mm": 2.08
+    },
+    {
+      "time_s": 10.0,
+      "temperature_min_K": 856.7095759335648,
+      "temperature_max_K": 1198.5026635957297,
+      "top_connected_damage_depth_mm": 2.4000000000000004
+    },
+    {
+      "time_s": 11.0,
+      "temperature_min_K": 844.260973115262,
+      "temperature_max_K": 1198.0955167709951,
+      "top_connected_damage_depth_mm": 2.4000000000000004
+    },
+    {
+      "time_s": 12.0,
+      "temperature_min_K": 832.778177435729,
+      "temperature_max_K": 1197.6825670579121,
+      "top_connected_damage_depth_mm": 2.7199999999999998
+    },
+    {
+      "time_s": 13.0,
+      "temperature_min_K": 822.1343004967142,
+      "temperature_max_K": 1197.2701232136699,
+      "top_connected_damage_depth_mm": 2.7199999999999998
+    },
+    {
+      "time_s": 14.0,
+      "temperature_min_K": 812.2438676152665,
+      "temperature_max_K": 1196.8629819596604,
+      "top_connected_damage_depth_mm": 3.04
+    },
+    {
+      "time_s": 15.0,
+      "temperature_min_K": 802.9973528306016,
+      "temperature_max_K": 1196.463924593485,
+      "top_connected_damage_depth_mm": 3.04
+    },
+    {
+      "time_s": 16.0,
+      "temperature_min_K": 794.3531564432689,
+      "temperature_max_K": 1196.075964811856,
+      "top_connected_damage_depth_mm": 3.3600000000000003
+    },
+    {
+      "time_s": 17.0,
+      "temperature_min_K": 786.3605286803956,
+      "temperature_max_K": 1195.7039804794642,
+      "top_connected_damage_depth_mm": 3.3600000000000003
+    },
+    {
+      "time_s": 18.0,
+      "temperature_min_K": 778.8605769755657,
+      "temperature_max_K": 1195.346341774538,
+      "top_connected_damage_depth_mm": 3.6799999999999997
+    },
+    {
+      "time_s": 19.0,
+      "temperature_min_K": 771.7987683225673,
+      "temperature_max_K": 1195.0033410248964,
+      "top_connected_damage_depth_mm": 3.6799999999999997
+    },
+    {
+      "time_s": 20.0,
+      "temperature_min_K": 765.1566080852239,
+      "temperature_max_K": 1194.6756212718103,
+      "top_connected_damage_depth_mm": 4.0
+    },
+    {
+      "time_s": 25.0,
+      "temperature_min_K": 737.0650017227746,
+      "temperature_max_K": 1193.2500375436034,
+      "top_connected_damage_depth_mm": 4.32
+    },
+    {
+      "time_s": 30.0,
+      "temperature_min_K": 715.79102842858,
+      "temperature_max_K": 1192.1429876880798,
+      "top_connected_damage_depth_mm": 4.64
+    },
+    {
+      "time_s": 35.0,
+      "temperature_min_K": 699.9129199696259,
+      "temperature_max_K": 1191.3086732296556,
+      "top_connected_damage_depth_mm": 4.96
+    },
+    {
+      "time_s": 40.0,
+      "temperature_min_K": 688.0046465551943,
+      "temperature_max_K": 1190.6814002142237,
+      "top_connected_damage_depth_mm": 5.279999999999999
+    },
+    {
+      "time_s": 45.0,
+      "temperature_min_K": 679.0728066337224,
+      "temperature_max_K": 1190.2107047569373,
+      "top_connected_damage_depth_mm": 5.279999999999999
+    },
+    {
+      "time_s": 50.0,
+      "temperature_min_K": 672.4111892818902,
+      "temperature_max_K": 1189.8595681946033,
+      "top_connected_damage_depth_mm": 5.279999999999999
+    },
+    {
+      "time_s": 55.0,
+      "temperature_min_K": 667.8198611882091,
+      "temperature_max_K": 1189.6175569493548,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 60.0,
+      "temperature_min_K": 664.4147190305449,
+      "temperature_max_K": 1189.4380766485867,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 65.0,
+      "temperature_min_K": 661.9431079618388,
+      "temperature_max_K": 1189.307803278234,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 70.0,
+      "temperature_min_K": 659.9474135725357,
+      "temperature_max_K": 1189.2026152896105,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 75.0,
+      "temperature_min_K": 658.2808642963571,
+      "temperature_max_K": 1189.11477585381,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 80.0,
+      "temperature_min_K": 657.1113312266907,
+      "temperature_max_K": 1189.0531330638958,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 85.0,
+      "temperature_min_K": 656.1394470794638,
+      "temperature_max_K": 1189.0019078019607,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 90.0,
+      "temperature_min_K": 655.381936910489,
+      "temperature_max_K": 1188.961981600606,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 95.0,
+      "temperature_min_K": 654.8035793886389,
+      "temperature_max_K": 1188.9314980335841,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 100.0,
+      "temperature_min_K": 654.3651002851099,
+      "temperature_max_K": 1188.9083870606019,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 105.0,
+      "temperature_min_K": 654.0334803022029,
+      "temperature_max_K": 1188.8909083254468,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 110.0,
+      "temperature_min_K": 653.781630333989,
+      "temperature_max_K": 1188.8776340382956,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 115.0,
+      "temperature_min_K": 653.5907943349562,
+      "temperature_max_K": 1188.8675756214864,
+      "top_connected_damage_depth_mm": 5.6
+    },
+    {
+      "time_s": 120.0,
+      "temperature_min_K": 653.4467860060159,
+      "temperature_max_K": 1188.8599853561843,
+      "top_connected_damage_depth_mm": 5.6
+    }
+  ]
+}

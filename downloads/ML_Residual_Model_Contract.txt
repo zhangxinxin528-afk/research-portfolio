@@ -1,0 +1,22 @@
+V5 residual C(t), frozen before learning
+
+GPU setup first:
+python gpu_sanity_v5.py --output FRESH_SANITY_DIRECTORY
+This uses artificial data only. Four learner paths (pointwise, smooth6, smooth10, GPU ridge) each test a learnable residual and a null residual, including 2D CUDA targets, saved inference, target-column removal, AB-odd C/residual, event-even output, off-grid interpolation and undefined t0. The null cases must select alpha0. Passing local no-fit checks cannot replace this GPU run.
+
+Main:
+python train_residual_v5.py --data DATA --v1-results FROZEN_V1_RESULTS --output FRESH_DIRECTORY [--audit-only]
+Only endpoint_v2.py is required as the adjacent frozen helper. Data schema/curves/native SHA are hard-pinned along with exact curve/t.hex/target_C.hex SHA. Input131=static119+dynamic12, odd55; targets are excluded from inputs. All39,840 positive native points retain original R2 targets and original fivefold ROI/spatial blocks. R3 diagnostic files and BM10 are never read.
+
+Eight configurations: point d2/500,d3/1500; Legendre K6/K10 each d2/500,d3/1500; odd GPU ridge lambda10/100. Forty outer CV fits. All actual fitting uses CUDA. CPU operations only build fixed features/bases, transform labels and evaluate. Regression targets are r=C_FVM-C_proxy, with training-fold hierarchical RMS scaling and no target centering. Multi-output XGBoost uses one_output_per_tree and 2D CuPy coefficient targets. Ridge has no intercept and uses only odd features times fixed K6 basis, with training-only feature RMS normalization.
+
+Native sample weights give each ROI equal total, each curve within ROI equal total, and each sample within curve equal total. Coefficient fits use equal ROI/curve weights. The basis is fixed by prescribed duration and positive time: Legendre degrees0..K-1 at 2log(t/.5)/log(T/.5)-1. It includes a constant and imposes no residual condition at t=0. No PCA/target-dependent basis is fit.
+
+All 0.25/0.5/1 shrinkage choices plus one exact alpha0 physical baseline are evaluated only on spatial OOF. Final roles are minimum hierarchical native MAE (then RMSE) and maximum original signed event-margin AP (then MAE), deduplicated if identical. Exact ties prefer lower alpha, fixed proxy, then declared candidate order. The configuration/alpha lock is saved before development prediction. The fixed zero-fit alpha0 development benchmark is always separately reported after the lock/final roles and never changes selection. Development is the previously diagnosed106curves/10ROI, not a new confirmation test.
+
+Event margin=min(max adjacent2 C minima,max adjacent2 -C minima); it can be negative. Event=margin>=.01, native dt=.5s. Negative margins are not clamped. Corrected C for positive alpha is clipped symmetrically to[-2,2]; alpha0 returns the original proxy bit-for-bit. Smooth refers to the residual basis; final physical bound clipping can introduce a corner if active.
+
+Saved inference: predict_saved(model_folder,point_frame,cp) needs no target_C/residual_C. Both proxy_C and all signed inputs must exchange sign under AB. Saved manifests contain scale, alpha, ordered features, odd list, basis/capacity, model checksum and wrapper. predict_saved_continuous(model_folder,native_frame,query_frame,cp) uses complete native residual knots with linear interpolation for pointwise trees, while smooth/ridge evaluate their analytic residual representation. Query supplies analytic physical-proxy inputs. Support is[.5,T]; t0 returns NaN and (0,.5) is rejected. Arbitrary-time tree evaluation is not called a smooth model.
+
+Outputs per learner: OOF_native_residual.csv.gz (full identity, original C/proxy/residual, unshrunk OOF residual, alpha1 corrected C and frozen fold), OOF_curves_alpha{alpha}.csv, per-fold saved models and actual training-fit metrics. For a selected alpha, reconstruct point C as clip(proxy_C+alpha*OOF_predicted_residual_unshrunk,-2,2), using exact proxy_C when alpha0. Root can compare selected heldout OOF against the four independent R3 diagnostic curves without reading them into this trainer.
+Final selected folders contain selected_model/, development_native.csv.gz, development_curves.csv and report.json. Root files include selection_lock_before_development.json, fixed_proxy_OOF_points/curves, fixed_proxy_development_native/curves/report, all candidate-alpha metrics and summary.json. Actual per-fold model scale is saved, not inferred from holdout targets. No new target labels, native cadence, event definition or training/test membership is introduced.

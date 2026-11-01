@@ -1,0 +1,18 @@
+{
+  "status": "NATIVE_REAL_ROTATION_ANIMATION_PACKAGED",
+  "native_frames": 73,
+  "physical_time_s": [
+    0,
+    0.1665001665001665
+  ],
+  "rotation_degrees": 360,
+  "fps": 12,
+  "threads": 16,
+  "slow_motion_factor": 36.5365,
+  "flow": "Actual sliding-mesh time-dependent k-epsilon URANS, uniform MID mixture",
+  "scope": "One initialized turn; not cyclic steady state, crystal trajectories, or experimental validation",
+  "streamlines": "Instantaneous velocity directions, not material particle paths",
+  "mp4": "G:\\Chemical CFD\\simulations\\nisulfate_cfd_pbm\\real_rotation_animation_20261021\\real_sliding_mesh_one_turn.mp4",
+  "gif": "G:\\Chemical CFD\\simulations\\nisulfate_cfd_pbm\\real_rotation_animation_20261021\\real_sliding_mesh_one_turn.gif",
+  "mp4_sha256": "527be42d5247c625706118a826232dcfe04518889342999fada4e8fa3007c850"
+}

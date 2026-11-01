@@ -1,0 +1,62 @@
+{
+  "selection": {
+    "frozen_utc": "2026-10-25T22:14:06.153303+00:00",
+    "before_first_outer_fold_complete": true,
+    "selection": "Input metadata only: new campaign, R2 train outerfold0, P02 contact pair, I200, D1e-14 if available; first ROI sorted. No selection on field errors.",
+    "base": 32,
+    "outer_fold": 0,
+    "sample_ids": [
+      "new::BM03_z0056_y0056_x0488_P02_onehub_uniform_A_D10_I200_r2_dt0.5",
+      "new::BM03_z0056_y0056_x0488_P02_onehub_uniform_B_D10_I200_r2_dt0.5"
+    ],
+    "target_indices": [
+      3923,
+      3929
+    ],
+    "cases": [
+      "BM03_z0056_y0056_x0488_P02_onehub_uniform_A_D10_I200",
+      "BM03_z0056_y0056_x0488_P02_onehub_uniform_B_D10_I200"
+    ],
+    "ROI": "BM03_z0056_y0056_x0488"
+  },
+  "examples": [
+    {
+      "sample_id": "new::BM03_z0056_y0056_x0488_P02_onehub_uniform_A_D10_I200_r2_dt0.5",
+      "roi_id": "BM03_z0056_y0056_x0488",
+      "target_index": 3923,
+      "outer_fold": 0,
+      "source_refine": 2,
+      "prediction_file": "target_3923.npz",
+      "MAE": 0.0004264013052204031,
+      "RMSE": 0.0007513406987970705,
+      "input_uniform_baseline_MAE": 0.00318871374998606,
+      "input_uniform_baseline_RMSE": 0.0041116333519341675,
+      "true_CAM_std": 0.004111633351934162,
+      "predicted_CAM_std": 0.0036290540043113877,
+      "supplied_CAM_MAE": 0.0004193434777423252,
+      "physical_voxel_um": 0.1,
+      "reference_resolution": "32cube native parent means",
+      "preselected_without_observing_prediction_error": true
+    },
+    {
+      "sample_id": "new::BM03_z0056_y0056_x0488_P02_onehub_uniform_B_D10_I200_r2_dt0.5",
+      "roi_id": "BM03_z0056_y0056_x0488",
+      "target_index": 3929,
+      "outer_fold": 0,
+      "source_refine": 2,
+      "prediction_file": "target_3929.npz",
+      "MAE": 0.00044971252732761886,
+      "RMSE": 0.0007708213187880642,
+      "input_uniform_baseline_MAE": 0.003155559943546266,
+      "input_uniform_baseline_RMSE": 0.004092632772401597,
+      "true_CAM_std": 0.004092632772401591,
+      "predicted_CAM_std": 0.003552676133731969,
+      "supplied_CAM_MAE": 0.00044232455845214836,
+      "physical_voxel_um": 0.1,
+      "reference_resolution": "32cube native parent means",
+      "preselected_without_observing_prediction_error": true
+    }
+  ],
+  "complete_CV": false,
+  "illustrative_two_preselected_examples_not_aggregate_generalization": true
+}

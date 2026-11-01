@@ -1,0 +1,5 @@
+﻿start_shell,ion_acetone_sigma,solvent_acetone_mole_fraction,mean_density_kg_m3,Ni_water_peak_A,mean_Ni_water_CN,mean_Ni_acetone_CN,mean_Ni_sulfate_O_CN,mean_Ni_total_O_CN,ligand_contact_identity_changes_5ps_resolution,outer_acetone_fraction_relative_to_bulk
+water6,LB,0.3005464480874317,999.1092584485101,2.075,6.0,0.0,0.0,6.0,0,0.2752211347660848
+water6,geometric,0.3005464480874317,1001.5559977433317,2.075,6.0,0.0,0.0,6.0,0,0.15874283020350435
+acetone1,LB,0.3005464480874317,1005.0435575472837,2.075,5.0,1.0,0.0,6.0,0,0.3156512478526285
+acetone1,geometric,0.3005464480874317,1002.5207002053698,2.075,5.0,1.0,0.0,6.0,0,0.2710893693462501

@@ -1,0 +1,10 @@
+Canonical 3D native endpoint dataset
+
+Files: samples.csv, targets_theta_f32.npy mmap (4461,32,32,32), dataset_schema.json. Geometry and contact assets use relative paths geometry_asset/contact_asset, also geometry_file/contact_file aliases.
+Target is actual source endpoint_native.theta_native_average, allCAM native parent-cell means; CAM-outside zero is padding masked from all losses/metrics. R2 fine64cube variation is averaged out and must not be called fullfine output.
+Spatial channel order: [pore,CAM,ISE] (labels0/1/2), ALL6, ELIGIBLE6, ACTIVE6, supplied_CAM. CAM index1. Directions z-,z+,y-,y+,x-,x+. Stored geometry static16 includes first15 and finalsupplied. Assemble static[:15],activation6,static[15:16]. ACTIVE=~loss on all actual interface faces; not loss and not eligibleAND~loss. All1949 cached22 equal direct rawgeometry/mask tensors.
+Scalars: condition_columns from schema are input-only initial_theta, log10_D, specific_current_A_kg, t_s, source_refine, mean_delta_theta_prescribed. Prescribed allCAM mean uses input theta0+I_specific*t*rho/(F*cmax), sign positive lithiation. Actual target mean is never an input. Outcome.parameters.duration is not trusted; frozen actual duration/endtime defines t.
+Fidelity stages: R1 pretrain only train_BM03 source_refine1 (2277 samples/231ROI); R2 finetune only train_BM03 source_refine2 (1273/96ROI). Keep all validation_BM03 excluded at both stages. R1 dev696/75ROI and R2 dev215/10ROI are existing diagnosed holds.
+global_fold is the original R2 frozen spatial-block assignment at BOTH fidelities. All18 training blocks covered. Original R1 fold numbering disagrees on16blocks and is audit-only. Every pretraining/fine-tune fold must exclude same heldout block/ROI. All sample_ID/case/ROI/sourceSHA fields are provenance, not numerical predictors.
+There are345 unique ROIs, not4461 independent structures. 596 physical cases have matched R1/R2 at same D/current/time/mask/geometry. Full dataset ~615MB; target floats584.7MB; max float64-to-float32 error2.98e-8.
+No new FVM/model fit/BM10 target. Pressure/contact-restoration inventory is separate; no pressure fields mixed here.

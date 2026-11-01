@@ -1,0 +1,7 @@
+Research portfolio assets
+
+Solid-state cathode: Xinyu Zhang, Jingyu Lu and Zheyu Ye. Supporting archive DOI: https://doi.org/10.5281/zenodo.22693265
+Original BM03 FIB-SEM tomography: Philip Minnmann and Johannes Schubert, https://doi.org/10.22029/jlupub-18458 . Geometry and geometry-derived assets retain CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/ . No additional license to the original data is implied.
+The native-grid reproduction does not reproduce the entire fine-grid study or constitute experimental validation.
+
+Cooling-fracture figures are rendered from computed COMSOL fields in the project archive. Simulation parameters are exploratory and not calibrated to natural basalt columns.

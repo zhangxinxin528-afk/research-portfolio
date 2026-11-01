@@ -1,0 +1,120 @@
+{
+  "doi": "10.1039/JR9330000943",
+  "pdf": "G:\\NiCd_Tutton_DFT\\phase_equilibrium\\literature_extracts\\caven_gardner_1933.pdf",
+  "sha256": "4148e1b96e32d08ee871441be4537d7538d2ed8c8459c26c3f35096c20ec3f6c",
+  "table": "unnumbered Ni table, upper left",
+  "pdf_page": 2,
+  "printed_page": 944,
+  "units": "Analytical component mol per 1000 g of equilibrium liquid water; NOT added-AS coordinate.",
+  "temperature_C": 25.0,
+  "unit_evidence": "Text on printed page 945 and axes of Fig.1.",
+  "transcription": "All 13 rows visually checked on full page and 400-dpi table rendering.",
+  "solid_identity_note": "Original authors used qualitative solid-phase identification; no new phase analysis performed here.",
+  "dash_note": "Dash at pure-component endpoints is interpreted as absent component, not a measured detection limit.",
+  "points": [
+    {
+      "row": 1,
+      "printed_AS": "—",
+      "printed_Ni": "2.490",
+      "m_AS": 0.0,
+      "m_Ni": 2.49,
+      "solid_phase": "NiSO4_7H2O"
+    },
+    {
+      "row": 2,
+      "printed_AS": "0.2020",
+      "printed_Ni": "2.498",
+      "m_AS": 0.202,
+      "m_Ni": 2.498,
+      "solid_phase": "NiSO4_7H2O"
+    },
+    {
+      "row": 3,
+      "printed_AS": "0.2727",
+      "printed_Ni": "2.505",
+      "m_AS": 0.2727,
+      "m_Ni": 2.505,
+      "solid_phase": "NiSO4_7H2O + Ni_Tutton"
+    },
+    {
+      "row": 4,
+      "printed_AS": "0.2839",
+      "printed_Ni": "2.337",
+      "m_AS": 0.2839,
+      "m_Ni": 2.337,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 5,
+      "printed_AS": "0.2296",
+      "printed_Ni": "0.2287",
+      "m_AS": 0.2296,
+      "m_Ni": 0.2287,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 6,
+      "printed_AS": "0.4976",
+      "printed_Ni": "0.0534",
+      "m_AS": 0.4976,
+      "m_Ni": 0.0534,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 7,
+      "printed_AS": "0.8136",
+      "printed_Ni": "0.0353",
+      "m_AS": 0.8136,
+      "m_Ni": 0.0353,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 8,
+      "printed_AS": "1.375",
+      "printed_Ni": "0.0237",
+      "m_AS": 1.375,
+      "m_Ni": 0.0237,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 9,
+      "printed_AS": "2.104",
+      "printed_Ni": "0.0159",
+      "m_AS": 2.104,
+      "m_Ni": 0.0159,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 10,
+      "printed_AS": "2.471",
+      "printed_Ni": "0.0136",
+      "m_AS": 2.471,
+      "m_Ni": 0.0136,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 11,
+      "printed_AS": "3.241",
+      "printed_Ni": "0.0088",
+      "m_AS": 3.241,
+      "m_Ni": 0.0088,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 12,
+      "printed_AS": "3.808",
+      "printed_Ni": "0.0057",
+      "m_AS": 3.808,
+      "m_Ni": 0.0057,
+      "solid_phase": "Ni_Tutton"
+    },
+    {
+      "row": 13,
+      "printed_AS": "5.813",
+      "printed_Ni": "—",
+      "m_AS": 5.813,
+      "m_Ni": 0.0,
+      "solid_phase": "ammonium_sulfate"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-10-25T21:17:34.767028+00:00",
+  "elapsed_s": 64.17097750000539,
+  "samples": 4461,
+  "groups": [
+    {
+      "source_refine": 1,
+      "split": "train_BM03",
+      "samples": 2277,
+      "ROIs": 231
+    },
+    {
+      "source_refine": 1,
+      "split": "validation_BM03",
+      "samples": 696,
+      "ROIs": 75
+    },
+    {
+      "source_refine": 2,
+      "split": "train_BM03",
+      "samples": 1273,
+      "ROIs": 96
+    },
+    {
+      "source_refine": 2,
+      "split": "validation_BM03",
+      "samples": 215,
+      "ROIs": 10
+    }
+  ],
+  "unique_ROIs": 345,
+  "geometries": 345,
+  "contact_maps": 1949,
+  "target_file_bytes": 584712320,
+  "total_dataset_bytes": 615386938,
+  "max_float32_target_abs_quantization_error": 2.9802322054628405e-08,
+  "max_source_mean_vs_prescribed_mean_error": 7.972511539833249e-13,
+  "split_ROI_or_geometry_collisions": 0,
+  "all_4461_source_cases_success_complete_valid": true,
+  "all_target_and_input_files_SHA_sealed": true,
+  "targets_native32_not_fullfine64": true,
+  "new_FVM_started": false,
+  "model_fits_started": false,
+  "BM10_opened": false
+}

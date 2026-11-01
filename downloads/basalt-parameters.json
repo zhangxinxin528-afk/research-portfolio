@@ -1,0 +1,30 @@
+{
+  "solver": "COMSOL Multiphysics 6.4",
+  "scope": "Exploratory 0–120 s continuous 3D run; not a natural hexagonal-column prediction.",
+  "geometry_mm": [
+    16,
+    16,
+    8
+  ],
+  "initial_temperature_K": 1200,
+  "ambient_temperature_K": 293,
+  "top_heat_transfer_coefficient_W_m2_K": 400,
+  "young_modulus_Pa": 50000000000.0,
+  "poisson_ratio": 0.25,
+  "density_kg_m3": 2900,
+  "thermal_conductivity_W_m_K": 2,
+  "heat_capacity_J_kg_K": 900,
+  "thermal_expansion_K_inverse": 8e-06,
+  "fracture_energy_J_m2": 100,
+  "phase_field_length_mm": 0.8,
+  "numerical_viscosity_s": 0.2,
+  "hex_elements": 16384,
+  "solved_dofs": 92565,
+  "material_parameters_calibrated": false,
+  "mesh_convergence_established": false,
+  "phase_field_range": [
+    -8.476294616747436e-17,
+    1.0104281314504757
+  ],
+  "largest_sampled_phase_decrease": 0.0021791198602139072
+}
