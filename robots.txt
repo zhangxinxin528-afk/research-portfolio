@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xinyu-research.dunchanzhang.chatgpt.site/sitemap.xml
